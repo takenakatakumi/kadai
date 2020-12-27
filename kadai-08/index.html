@@ -1,6 +1,11 @@
 <html>
 <head>
-    <meta charaset="utf-8">
+    <meta charset="utf-8">
+    <style>
+        button {
+            font-size:32px;
+        }
+    </style>
 </head>
 <body>
     <p>おみくじプログラム</p>
@@ -11,7 +16,7 @@
         const omikuji = document.getElementByID("omikuji")
 
         //おみくじボタンにイベントリスナーを追加して、ボタンを押した時の処理を定義
-        omikuji.addElementListner('click',() => {
+        omikuji.addEventListener('click',() => {
             //ここでおみくじを引く処理をする
             //ランダムで結果を表示する
             const luck = Math.random()
@@ -23,5 +28,6 @@
                 alert('凶です')
             } 
         })
+    </script>
 </body>
 </html>
