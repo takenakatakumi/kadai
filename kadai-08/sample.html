@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+/**/
+label {
+    font-size: 24px;
+    font-weight: bold;
+    font-family:serif:
+}
+input {
+    font-size: 24px;
+}
+button {
+    font-size: 24px;
+    color: orange;
+    background: black;
+}
+</style>
+</head>
+<body>
+    <label for="data">データを入力</label>
+    <input id="data" type="text" value="123">
+    <button id="jikko">実行</button>
+
+    <script>
+        const input = document.getElementByID('data')
+        const button = document.getElementByID('jikko')
+        button.addEventListener('click',() => {
+            alert(inpu.value)
+        })
+
+         input.getElementByID('focus', () => {console.log('focus')})
+    </script>     
+</body>
+</html>
